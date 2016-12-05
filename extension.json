@@ -1,11 +1,12 @@
 {
-	"name": "VectorBeta",
+	"name": "HWVectorBeta",
 	"author": [
+		"Hitchwiki",
 		"Jon Robson",
 		"Trevor Parscal",
 		"Juliusz Gonera"
 	],
-	"url": "https://www.mediawiki.org/wiki/Extension:VectorBeta",
+	"url": "https://github.com/Hitchwiki/mediawiki-extensions-VectorBeta/",
 	"descriptionmsg": "vectorbeta-desc",
 	"type": "betafeatures",
 	"MessagesDirs": {
