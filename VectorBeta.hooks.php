@@ -435,35 +435,11 @@ class VectorBetaHooks {
 			// Compact Personal Bar modules
 			if ( BetaFeatures::isFeatureEnabled( $user, 'betafeatures-vector-compact-personal-bar' ) ) {
 				$modules[] = 'skins.vector.compactPersonalBar';
-			} elseif ( $user->isLoggedIn() ) {
-				$modules[] = 'skins.vector.compactPersonalBar.defaultTracking';
 			}
 
 			$out->addModules( $modules );
 		} else {
 			wfDebugLog( 'VectorBeta', 'The BetaFeatures extension is not installed' );
-		}
-
-		return true;
-	}
-
-	/**
-	 * ResourceLoaderRegisterModules hook handler
-	 * Registering our EventLogging schema modules
-	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ResourceLoaderRegisterModules
-	 *
-	 * @param ResourceLoader &$resourceLoader The ResourceLoader object
-	 * @return bool Always true
-	 */
-	public static function onResourceLoaderRegisterModules( ResourceLoader &$resourceLoader ) {
-		global $wgResourceModules;
-
-		if ( class_exists( 'ResourceLoaderSchemaModule' ) ) {
-			$wgResourceModules[ 'skins.vector.compactPersonalBar.schema' ] = array(
-				'class'  => 'ResourceLoaderSchemaModule',
-				'schema' => 'PersonalBar',
-				'revision' => 7829128,
-			);
 		}
 
 		return true;

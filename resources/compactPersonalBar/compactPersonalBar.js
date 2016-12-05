@@ -57,15 +57,6 @@
 		this.items[group].push( $el );
 		this.render();
 
-		if ( name ) {
-			mw.beta.trackClick( $el, 'PersonalBar', {
-				action: 'link-click',
-				link: name,
-				version: this.name,
-				userId: mw.user.getId()
-			} );
-		}
-
 		return this;
 	};
 
@@ -168,4 +159,3 @@
 	} );
 
 }( mediaWiki, jQuery ) );
-
