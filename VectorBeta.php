@@ -1,7 +1,7 @@
 <?php
 
 if ( function_exists( 'wfLoadExtension' ) ) {
-	wfLoadExtension( 'VectorBeta' );
+	wfLoadExtension( 'HWVectorBeta' );
 	// Keep i18n globals so mergeMessageFileList.php doesn't break
 	$wgMessagesDirs['VectorBeta'] = __DIR__ . '/i18n';
 	/* wfWarn(
