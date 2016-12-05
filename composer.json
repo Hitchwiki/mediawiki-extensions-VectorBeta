@@ -3,7 +3,7 @@
   "type": "mediawiki-extension",
   "description": "Hitchwiki.org fork of original unmaintained VectorBeta extension.",
   "homepage": "https://github.com/Hitchwiki/mediawiki-extensions-VectorBeta",
-	"license": "GPL-3.0+",
+  "license": "GPL-2.0",
   "authors": [
     {
       "name": "Hitchwiki",
