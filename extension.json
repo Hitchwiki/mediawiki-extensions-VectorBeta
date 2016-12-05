@@ -67,7 +67,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteExtPath": "VectorBeta"
+		"remoteExtPath": "HWVectorBeta"
 	},
 	"Hooks": {
 		"SkinTemplateOutputPageBeforeExec": [
