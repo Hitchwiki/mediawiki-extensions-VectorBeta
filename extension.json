@@ -8,6 +8,7 @@
 	],
 	"url": "https://github.com/Hitchwiki/mediawiki-extensions-VectorBeta/",
 	"descriptionmsg": "vectorbeta-desc",
+	"license-name": "GPL-3.0+",
 	"type": "betafeatures",
 	"MessagesDirs": {
 		"VectorBeta": [
