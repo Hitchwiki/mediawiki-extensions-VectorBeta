@@ -282,8 +282,17 @@ class VectorBetaHooks {
 		unset( $views['history'] );
 		unset( $views['view'] );
 
-		if ( isset( $views['edit'] ) ) {
-			$edit = $views['edit'];
+    // Figures out what to show as primary edit button
+    // Rest of the edit options are going to be hidden behing "..." button
+		if ( isset( $views['ve-edit'] ) ) {
+      // "Edit" using Visual Editor is the primary option
+      $edit = $views['ve-edit'];
+		} else if ( isset( $views['formedit'] ) ) {
+      // "Edit with form" is the primary option
+      $edit = $views['formedit'];
+		} else if ( isset( $views['edit'] ) ) {
+      // "Edit source" is the primary option
+      $edit = $views['edit'];
 		} elseif ( isset( $views['viewsource'] ) ) {
 			$edit = $views['viewsource'];
 		} else {
